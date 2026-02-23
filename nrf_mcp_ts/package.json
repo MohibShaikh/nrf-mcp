@@ -13,10 +13,10 @@
     "ble",
     "zigbee"
   ],
-  "homepage": "https://github.com/mohibuddin9/nrf-mcp",
+  "homepage": "https://github.com/MohibShaikh/nrf-mcp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mohibuddin9/nrf-mcp.git"
+    "url": "https://github.com/MohibShaikh/nrf-mcp.git"
   },
   "license": "MIT",
   "type": "module",

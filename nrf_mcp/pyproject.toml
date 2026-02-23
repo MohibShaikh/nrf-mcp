@@ -19,8 +19,8 @@ dependencies = [
 nrf-mcp = "nrf_mcp.server:main"
 
 [project.urls]
-Homepage = "https://github.com/mohibuddin9/nrf-mcp"
-Repository = "https://github.com/mohibuddin9/nrf-mcp"
+Homepage = "https://github.com/MohibShaikh/nrf-mcp"
+Repository = "https://github.com/MohibShaikh/nrf-mcp"
 
 [tool.hatch.build.targets.wheel]
 packages = ["nrf_mcp"]
