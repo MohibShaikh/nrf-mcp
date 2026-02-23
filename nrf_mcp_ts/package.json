@@ -1,0 +1,49 @@
+{
+  "name": "nrf-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for nRF54L15DK — build, flash, and read logs via Claude or any MCP client",
+  "keywords": [
+    "mcp",
+    "nrf",
+    "nrf54l15",
+    "zephyr",
+    "nordic",
+    "embedded",
+    "iot",
+    "ble",
+    "zigbee"
+  ],
+  "homepage": "https://github.com/mohibuddin9/nrf-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohibuddin9/nrf-mcp.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/server.js",
+  "bin": {
+    "nrf-mcp": "dist/server.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "start": "node dist/server.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "serialport": "^12.0.0",
+    "yaml": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

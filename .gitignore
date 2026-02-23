@@ -1,0 +1,12 @@
+# TypeScript build output
+nrf_mcp_ts/dist/
+nrf_mcp_ts/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+nrf_mcp/*.egg-info/
+nrf_mcp/dist/
+
+# Env
+.env

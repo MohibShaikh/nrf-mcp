@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "nrf-mcp"
+version = "1.0.0"
+description = "MCP server for nRF54L15DK — build, flash, and read logs via Claude or any MCP client"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["mcp", "nrf", "nrf54l15", "zephyr", "nordic", "embedded", "ble", "zigbee"]
+dependencies = [
+    "mcp>=1.0.0",
+    "pyserial>=3.5",
+]
+
+[project.scripts]
+nrf-mcp = "nrf_mcp.server:main"
+
+[project.urls]
+Homepage = "https://github.com/mohibuddin9/nrf-mcp"
+Repository = "https://github.com/mohibuddin9/nrf-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["nrf_mcp"]
