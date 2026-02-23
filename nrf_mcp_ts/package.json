@@ -1,6 +1,6 @@
 {
   "name": "nrf-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for nRF54L15DK — build, flash, and read logs via Claude or any MCP client",
   "keywords": [
     "mcp",
@@ -16,7 +16,7 @@
   "homepage": "https://github.com/MohibShaikh/nrf-mcp",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MohibShaikh/nrf-mcp.git"
+    "url": "git+https://github.com/MohibShaikh/nrf-mcp.git"
   },
   "license": "MIT",
   "type": "module",
