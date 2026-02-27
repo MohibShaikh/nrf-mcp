@@ -55,8 +55,12 @@ export async function toolReadUart(
 
     const parser = sp.pipe(new ReadlineParser({ delimiter: "\n" }));
 
+    const MAX_UART_LINES = 200;
+
     parser.on("data", (line: string) => {
-      lines.push(line.trimEnd());
+      if (lines.length < MAX_UART_LINES) {
+        lines.push(line.trimEnd());
+      }
     });
 
     sp.on("error", (err) => {

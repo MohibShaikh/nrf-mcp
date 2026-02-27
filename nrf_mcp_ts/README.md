@@ -51,8 +51,8 @@ Add to `claude_desktop_config.json`:
       "command": "npx",
       "args": ["nrf-mcp"],
       "env": {
-        "NRF_TOOLCHAIN": "/home/user/ncs/toolchains/b77d8c1312",
-        "NRF_SDK": "/home/user/ncs/v2.9.2"
+        "NRF_TOOLCHAIN": "/path/to/ncs/toolchains/<hash>",
+        "NRF_SDK": "/path/to/ncs/v2.x.x"
       }
     }
   }
@@ -81,7 +81,7 @@ This works out of the box for standard nRF Connect SDK installations.
 
 Once connected, ask Claude:
 
-> "Build the peripheral firmware in `/home/user/ncs/samples/ble_pi_direct/peripheral`"
+> "Build the peripheral firmware in `/path/to/my-sample/peripheral`"
 
 > "Flash the ble_long_range peripheral sample"
 

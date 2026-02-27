@@ -1,6 +1,6 @@
 {
   "name": "nrf-mcp",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "MCP server for nRF54L15DK — build, flash, and read logs via Claude or any MCP client",
   "keywords": [
     "mcp",
